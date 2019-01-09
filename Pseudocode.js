@@ -35,15 +35,15 @@ DISPLAY "Laundry Process"
 
 // QUESTION 4
 STORE "Count" to 0
+STORE "Kuku" to = " "
+  
   WHILE "Count" < 40
+    
+    IF "Kuku"  = "Pendek"
+      DISPLAY "Puji"
+    ELSE IF "Kuku" = "Panjang"
+      DISPLAY "Hukum"
+   
    ADD "Count" by 1
+
 DISPLAY "Count"
-
-
-STORE "Short" with "Count % 2 = 0"
-STORE "Long" with "Count % 2 ≠ 0"
-
-IF "Count" % 2 = 0
-  DISPLAY "Puji"
-ELSE
-  DISPLAY "Hukum"
